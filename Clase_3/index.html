@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tercera Impresion</title>
+    </head>
+    <body>
+        <header><h1>Nuevas Etiquetas</h1></header>
+        <main>
+            <section>
+                <figure data-autor="Samir Londoño">  
+                    <!-- data- : Sirve para agregar informacion adicional al elemento, que luego se puede utilizar en javascript o css -->
+
+                    <img id="echepaca" src="https://ik.imagekit.io/hpapi/harry.jpg" title="Harry Potter" alt="Imagen de EJemplo" loading="lazy">
+
+                    <!-- loading: sirve para indicar como cargar la imagen en la pagina con eager = de una vez o lazy  = cuando esta en el area visible-->
+                    <figcaption>Harry Popoter</figcaption>
+                    
+                </figure>
+                <a href="#echepalla">Bajar pa abajo xd</a>
+
+                <!-- Listas ul - ol - dl  -->
+
+                <h3>Lista Desordenada</h3>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+                <h3>Lista Ordenada</h3>
+                <!-- type: es para poner otro tipo de numeracion que son las siguientes ,  1 = arabiga, A para letras mayusculas, a minusculas y romanos es I, 
+                Ademas puede revertir la lista con "reversed", la lista ol es la unica con estos atributos las otras usan los genericos -->
+                <ol type="I">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ol>
+
+                <h3>Combinacion</h3>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <ol>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                    </ol>
+                    <li>3</li>
+                </ul>
+
+                <h3>Lista dl</h3> 
+                <!-- dl - dt - dd -->
+                <dl>
+                    <dt>Familia</dt>
+                    <dd>
+                        <dl>
+                            <dt>Padres</dt>
+                            <dd>La mama y el papa</dd>
+                        </dl>
+                    </dd>
+                    <dd>Abuelos</dd>
+                    <dd>Primos</dd>
+                    <dd>
+                        <dl>
+                            <dt>Otra familia</dt>
+                            <dd>
+                                <ol type="1" reversed>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                </ol>
+                            </dd>
+                        </dl>
+                    </dd>
+                </dl>
+
+                <h3>Tablas</h3>
+                <!-- Esta manera la tabla tiene una mejor estructura -->
+                <table>
+                    <colgroup>
+                        <col style="background: blue;">
+                    </colgroup>
+
+                    <!-- esto agrega estilos a columas -->
+
+
+                    <caption>Tabla de Ejemplo</caption>
+                    <thead>
+                        <th>Nombre - Persona</th>
+                        <th>Apellido - Persona</th>
+                        <th>Numero - Persona</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3">Samir</td>
+                            <!-- Estos colspan y rowspan es que esa celda toma espacios adicionales -->
+                            <td>Londoño</td>
+                            <td>3112745990</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Samir</td>
+                            <td>Londoño</td>
+                            <td>3112745990</td>
+                        </tr>
+                        <tr>
+                            <td>Samir</td>
+                            <td>Londoño</td>
+                            <td>3112745990</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Este es el pie de pagina</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <h3>Etiqueta "a"</h3>
+                <a href="https://buscaminas.eu/"" target="_blank">Vamonos a Buscaminas</a>
+                <br>
+                <a href="./ejemplo.html">Ir a otra pagina</a>
+                <br>
+                <a href="#echepaca" id="echepalla"> Eche pa arriba</a>
+            </section>
+
+        </main>
+    </body>
+</html>

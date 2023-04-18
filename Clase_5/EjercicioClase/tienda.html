@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tienda</title>
+        <link rel="stylesheet" href="./styless.css">
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <section>
+                <form action="">
+                    <fieldset>
+                        <legend>Añadir Nuevo Articulo</legend>
+                        <label>Nombre: <input type="text" placeholder="Ejem: Jabon, mesa, bomba, etc." required maxlength="40" minlength="10"></label>
+                        <br>
+                        <label> Precio: <input type="number" required min="0" placeholder="$2"> </label>
+                        <br>
+                        <label for="imagen">Imagen del Producto</label>
+                        <input name="uploadedfile"  id="imagen" type="file" required/>
+                        <br>
+                        <label>Categoria: 
+                            <select name="Escoja bobo" id="">
+                                <option value="valor1">Joyeria</option>
+                                <option value="valor2">Pantalones</option>
+                                <option value="valor3">Chaquetas</option>
+                            </select>
+                        </label>
+                        <br>
+
+                        <label> Genero
+                            <br>
+                            <label><input type="radio" name="genero" required> Hombre</label>
+                            <br>
+                            <label><input type="radio" name="genero" required> Mujer</label>
+                            <br>
+                        </label>
+                        <br>
+
+                        <label> Calidad
+                            <br>
+                            <label><input type="radio" name="calidad" required> Alta</label>
+                            <br>
+                            <label><input type="radio" name="calidad" required> Medio</label>
+                            <br>                            
+                            <label><input type="radio" name="calidad" required> Bajo</label>
+                            <br>
+                        </label>
+                        <br>
+                        <label for="descripcion" class="formu">Descripcion del producto</label>
+                        <textarea name="" id="descripcion" cols="30" rows="10" placeholder="Caracteristica principales del producto." required class="formu"></textarea>
+                        <br>
+                        <button type="submit" class="formu">Enviar</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,101 @@
+img{
+    width: 50px;
+    height: 50px;
+}
+
+header{
+    display: flex;
+}
+
+div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    color: blue;
+}
+
+
+
+
+
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
+main{
+    display: flex;
+}
+
+.art {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 80%;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+.navegacion li{
+    list-style: none;
+    font-size: 30px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    padding-left: px;
+    padding-right: 5px;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.footer li{
+    list-style: none;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+nav{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+aside{
+    width: 20%;
+    border-left: 1px solid black;
+    padding-left: 10px;
+}
+
+section{
+    width: 80%;
+}
+
+
+footer {
+    border-top: 1px solid black;
+}
+
+h3{
+    text-align: center;
+}
+
+#mapa{
+    margin-bottom: 20px;
+}

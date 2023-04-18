@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Quinta Impresion</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            input:valid{
+                border-color: green;
+            }
+            input :invalid{
+                border-color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>ETIQUETA FORM</h1>
+        </header>
+        <main>
+            <section>
+                <!-- siempre se usa para hacer conexiones con la base de datos con el fin de enviar informacion  -->
+                <form action="#acavaphp">
+                    <fieldset>
+                        <h2>Log In</h2>
+                        <label>Nombre Usuario <input type="text" placeholder="Nombre Completo" required maxlength="10" minlength="5"></label>
+                        <br>
+                        <label>Contraseña <input type="password" required> </label>
+                        <br>
+                        <!-- en el pattern se valida de forma mas rigurosa los inputs -->
+                        <label>Email <input type="email" required pattern="">   </label>
+                        <!-- Hay una pagina especial el cual revisa de forma rigurosa las validaciones con pattern
+                        https://support.google.com/a/answer/1371415?hl=es 
+                        https://regexr.com/-->
+                        
+                        <br>
+                        <label> Telefono <input type="tel" required min="10"></label>
+                        <br>
+                        <label>Estado Civil 
+                            <br>
+                            <label><input type="radio" name="estado"> Casado</label>
+                            <br>
+                            <label><input type="radio" name="estado"> Soltero</label>
+                            <br>
+                            <label><input type="radio" name="estado"> Union Libre</label>
+                        </label>
+                        <br>
+                        <label>Fecha de Nacimiento <input type="date" required></label>
+                        <br>
+                        <label for="descripcion">Descripcion</label>
+                        <br>
+                        <textarea name="" id="descripcion" cols="30" rows="10" placeholder="Escribe un comentario."></textarea>
+                        <br>
+                        <progress value="0" max="100"></progress>
+                        <br>
+                        <meter value="70" min="0" max="200"></meter>
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+
+                <article>
+                    <h2>Informacion sobre el Head</h2>
+                    <p> </p>
+                </article>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    
+    </body>
+</html>
