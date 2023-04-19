@@ -1,3 +1,10 @@
+/* SELECTORES POR ETIQUETA */
+
+main{
+    display: flex;
+    height: 100vh;
+}
+
 img{
     width: 50px;
     height: 50px;
@@ -23,8 +30,30 @@ a:hover{
     color: blue;
 }
 
+nav{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+aside{
+    width: 20%;
+    border-left: 1px solid black;
+    padding-left: 10px;
+}
+
+section{
+    display: flex;
+    width: 80%;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+}
+
+footer {
+    border-top: 1px solid black;
+}
 
 
+/* SELECTOR POR ID */
 
 
 #logo {
@@ -32,14 +61,13 @@ a:hover{
     height: 100px;
 }
 
-main{
-    display: flex;
-    height: 100vh;
+#footer1{
+    text-align: center;
 }
 
 
 
- 
+ /* SELECTOR POR CLASE */
 
 .navegacion li{
     list-style: none;
@@ -66,29 +94,20 @@ main{
     
 }
 
-nav{
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+
+/* Selectores Hijos directos*/
+
+.footer>li{
+    color: yellow;
 }
 
-aside{
-    width: 20%;
-    border-left: 1px solid black;
-    padding-left: 10px;
+
+/* Selectores Hermanos y Adyasencia */
+
+.lifooter ~ li {
+    color: red;
 }
 
-section{
-    display: flex;
-    width: 80%;
-    flex-direction: column-reverse;
-    justify-content: space-around;
+.lifooter + li {
+    color: blue;
 }
-
-footer {
-    border-top: 1px solid black;
-}
-
-#footer1{
-    text-align: center;
-}
-
