@@ -1,0 +1,177 @@
+h2{
+    background-color: aqua;
+}
+
+p{
+    color: red;
+    background-color: yellow;
+}
+
+#pverde{
+    color: green;
+}
+
+.p1 {
+    color: blue;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Selectores Avanzados */
+
+/* Hijos directos */
+.sele-hij-des>li{
+    background-color: gray;
+
+}
+
+/* Selector de Descendecia */
+.sele-des b{
+    background-color: aqua;
+
+}
+
+/* Selector Hermanos y Adyacentes*/
+.herma ~ li{
+    color: crimson;
+}
+
+.herma + li{
+    color: green;
+}
+
+/* Selectores por  atributos */
+.selec-atri[target]{
+    background-color: turquoise;
+
+}
+
+.selec-atri[target="_top"]{
+    background-color: red;
+
+}
+
+/* COMODINES SEÑLECTORES */
+
+.selec-atri[href*= "youtube"]{
+    background-color: green;
+
+}
+
+/* buscar por palabras de los atributos por ejemplo href youtube */
+
+/* palabra al inicio de atributo */
+
+.selec-atri[href^= "https"]{
+    background-color: blue;
+
+}
+
+/* palabra al final del atributo */
+
+.selec-atri[href$= "com"]{
+    background-color: rgb(128, 0, 111);
+
+}
+
+/* Otros Selectores */
+
+.selec-atri b[class~= "123"]{
+    color:  rgb(223, 209, 11);
+
+}
+
+.selec-atri b[class|= "123"]{
+    color:  rgb(11, 223, 22);
+
+}
+
+/* Selector Universal */
+
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+
+.universe{
+    background-color: red;
+}
+
+
+/* Pseudo-Clases */
+.Hover li:hover{
+    color: blue;
+}
+
+/* Pesudoclases Enlace */
+
+.pseuenlace:link{
+    color: red;
+
+}
+
+.pseuenlace:visited{
+    color: red;
+
+}
+
+
+.pseuenlace1:focus{
+    font-size: 30px;
+    border-radius: 30px;
+
+}
+
+/* Pseudo-Elementos*/
+.pseuclase1::before{
+    content: "Este es un after";
+}
+
+.pseuclase1::first-letter{
+    font-size: 35px;
+    color: blue;
+}
+
+.pseuclase2{
+    background-color: white;
+}
+
+.pseuclase2::selection{
+    background-color: red;
+}
+
+/* Agruapacion de Selectores */
+
+.soyh1, .soynav, .soymain, .soyfoter{
+    display: flex;
+    justify-content: center;
+}
+
+/* CASCADA  es como ejecuta el navegador*/
+
+/* ESPECIFICDAD */
+/* de mas a importante a menos
+1. !inportant
+2. #D
+3. Estilos de Linea
+4. Clases Atributos y Pesudoclases 
+5. Etiquetas y pseudoelementos
+6.Selector Universal
+las cosas se aplican segun la importancia*/
+
+#primero{
+    background-color: bisque;
+}
+
+.segundo{
+background-color: red;
+}
+
+/* Herencia */
+.heren > li p {
+    font-size: 35px;
+}
+
+

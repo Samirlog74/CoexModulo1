@@ -1,0 +1,9 @@
+/* Box Model */
+
+.ejemplo{
+    background-color: aqua;
+    padding: 300px;
+    border: solid blue;
+    border-radius: 10px;
+    margin: 15px;
+}
